@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Hangman Game</title>
+	<title>Gemstone Collector Game</title>
 	
 	<!-- Bootstrap CDN -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -15,9 +15,78 @@
 
 </head>
 
+<!--Title of Game-->
+<header>
+	<h1>Gemstone Collector!</h1>
+</header>
+
+<!--Content-->
 <body>
+<div class="container">
+
+<!-- Game Information-->
+<div class="row">
+
+	<!--Rules Explanation-->
+	<div class="col-xs-12 col-sm-6 col-md-8">
+		<p> You will be given a random number at the start of the game.</p>
+		<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+		<p>You will win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+		<p>The value of each crystal is hidden from you until you click on it.</p>
+		<p>Each time when the game starts, the game will change the values of each crystal.</p>
+	</div>
+
+	<!--Goal To Reach-->
+	<div class="col-xs-6 col-md-4">
+		Goal to reach: <p id="goal">0</p>
+	</div>
+
+	<!-- Wins & Losses-->
+	<div class="col-xs-6 col-sm-4">
+		Wins: <p id="wins">0</p>
+		Losses: <p id="losses">0</p>
+	</div>
+
+</div>
+
+<!--Gemstones-->
+<div class="row">
+	<!--Lapis Lazuli-->
+	<div class="col-xs-4 col-sm-3" id="lapis">
+		<img class="gemstones" src="assets/images/lapus-lazuli.jpg">
+	</div>
+
+	<!--Ruby Quartz-->
+	<div class="col-xs-4 col-sm-3" id="rose">
+		<img class="gemstones" src="assets/images/rose-quartz.jpg">
+	</div>
+
+	<!--Malachite-->
+	<div class="col-xs-4 col-sm-3" id="malachite">
+		<img class="gemstones" src="assets/images/malachite.jpg">
+	</div>
+
+	<!--Amethyst-->
+	<div class="col-xs-4 col-sm-3" id="amethyst">
+		<img class="gemstones" src="assets/images/amethyst.jpg">
+	</div>
+
+</div>
+
+<!--Player Information-->
+<div class="row">
+
+	<!--Your Total Score Is:-->
+	<div class="colxs-6 col-md-4">Your total score is:</div>
+</div>
+
+<div class=:"row">
+	<!--Total Score-->
+	<div class="colxs-6 col-md-4" id="totalscore">0</div>
+</div>
 
 <script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </body>
 
 </html>
