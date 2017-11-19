@@ -13,6 +13,9 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="assets/css/style.css">
 
+	<!--JQuery-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 
 <!--Title of Game-->
@@ -30,15 +33,15 @@
 	<!--Rules Explanation-->
 	<div class="col-xs-12 col-sm-6 col-md-8">
 		<p> You will be given a random number at the start of the game.</p>
-		<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+		<p>There are four gemstones below. By clicking on a gemstone you will add a specific amount of points to your total score.</p>
 		<p>You will win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
-		<p>The value of each crystal is hidden from you until you click on it.</p>
-		<p>Each time when the game starts, the game will change the values of each crystal.</p>
+		<p>The value of each gemstone is hidden from you until you click on it.</p>
+		<p>Each time when the game starts, the game will change the values of each gemstone.</p>
 	</div>
 
 	<!--Goal To Reach-->
 	<div class="col-xs-6 col-md-4">
-		Goal to reach: <p id="goal">0</p>
+		Score to reach: <p id="goal">0</p>
 	</div>
 
 	<!-- Wins & Losses-->
@@ -52,23 +55,23 @@
 <!--Gemstones-->
 <div class="row">
 	<!--Lapis Lazuli-->
-	<div class="col-xs-4 col-sm-3" id="lapis">
-		<img class="gemstones" src="assets/images/lapus-lazuli.jpg">
+	<div type= "button" class="col-xs-4 col-sm-3">
+		<img class="gemstones" id="lapis" src="assets/images/lapus-lazuli.jpg">
 	</div>
 
-	<!--Ruby Quartz-->
-	<div class="col-xs-4 col-sm-3" id="rose">
-		<img class="gemstones" src="assets/images/rose-quartz.jpg">
+	<!--Rose Quartz-->
+	<div type= "button" class="col-xs-4 col-sm-3">
+		<img class="gemstones" id="rose" src="assets/images/rose-quartz.jpg">
 	</div>
 
 	<!--Malachite-->
-	<div class="col-xs-4 col-sm-3" id="malachite">
-		<img class="gemstones" src="assets/images/malachite.jpg">
+	<div type= "button" class="col-xs-4 col-sm-3">
+		<img class="gemstones" id="malachite" src="assets/images/malachite.jpg">
 	</div>
 
 	<!--Amethyst-->
-	<div class="col-xs-4 col-sm-3" id="amethyst">
-		<img class="gemstones" src="assets/images/amethyst.jpg">
+	<div type="button" class="col-xs-4 col-sm-3">
+		<img class="gemstones" id="amethyst" src="assets/images/amethyst.jpg">
 	</div>
 
 </div>
@@ -82,7 +85,7 @@
 
 <div class=:"row">
 	<!--Total Score-->
-	<div class="colxs-6 col-md-4" id="totalscore">0</div>
+	<div class="colxs-6 col-md-4"><p id="totalScore">0</p></div>
 </div>
 
 <script type="text/javascript" src="assets/javascript/game.js"></script>
