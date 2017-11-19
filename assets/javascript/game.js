@@ -62,11 +62,11 @@ function start() {
 
 	//Click function
 	$('.gemstones').off().on('click', function() {
-		var test1 = $(this).attr('value');
-		totalScore = parseInt(totalScore) + parseInt(test1);
+		var gemScore = $(this).attr('value');
+		totalScore = parseInt(totalScore) + parseInt(gemScore);
 		$('#totalScore').html(totalScore);
-		console.log('Crystal' + test1);
-		console.log('Final Score:' + totalScore);
+		console.log('Crystal Value: ' + gemScore);
+		console.log('Final Score: ' + totalScore);
 
 
 
