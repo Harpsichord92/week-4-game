@@ -3,3 +3,30 @@
 	height: auto;
 	border: 1px dashed black;
 }
+
+#imagerow {
+	padding-bottom: 25px;
+}
+
+.container {
+	padding-top: 25px;
+}
+header {
+	text-align:center;
+	padding-bottom: 25px;
+	padding-top: 10px;
+	background-image: url("file:///Users/harpsichord/Development/Homeworks/Homework%20%234/week-4-game/assets/images/gemstones.jpg");
+	color: #ffffff;
+}
+
+body {
+	background: #808080;
+}
+
+p {
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 48px;
+}
