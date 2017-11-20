@@ -45,26 +45,36 @@ function start() {
 	//Gives crystals their values
 
 		//Malachite Value
-			$('#malachite').attr("value", malVal);
-				console.log('Malachite:'+ malVal);
+		$('#malachite').attr("value", malVal);
+
+			//Test
+			console.log('Malachite:'+ malVal);
 
 		//Rose-Quartz Value
-			$('#rose').attr("value", roseVal);
-				console.log('Rose-Quartz:'+ roseVal);
+		$('#rose').attr("value", roseVal);
+
+			//Test
+			console.log('Rose-Quartz:'+ roseVal);
 
 		//Amethyst Value
-			$('#amethyst').attr("value", ameVal);
-				console.log('Amethyst:'+ ameVal);
+		$('#amethyst').attr("value", ameVal);
+
+			//Test
+			console.log('Amethyst:'+ ameVal);
 
 		//Lapis Lazuli Value
-			$('#lapis').attr("value", lapVal);
-				console.log('Lapis:'+ lapVal);
+		$('#lapis').attr("value", lapVal);
+
+			//Test
+			console.log('Lapis:'+ lapVal);
 
 	//Click function
 	$('.gemstones').off().on('click', function() {
 		var gemScore = $(this).attr('value');
 		totalScore = parseInt(totalScore) + parseInt(gemScore);
 		$('#totalScore').html(totalScore);
+
+		//Test
 		console.log('Crystal Value: ' + gemScore);
 		console.log('Final Score: ' + totalScore);
 
