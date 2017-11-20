@@ -15,12 +15,14 @@ header {
 	text-align:center;
 	padding-bottom: 25px;
 	padding-top: 10px;
-	background-image: url("file:///Users/harpsichord/Development/Homeworks/Homework%20%234/week-4-game/assets/images/gemstones.jpg");
-	color: #ffffff;
+	background-image: url('../images/gemstone.jpg');
+	color: #ececc3;
 }
 
 body {
 	background: #808080;
+	background-image: url('../images/gemstone.jpg');
+	color: #ececc3;
 }
 
 p {
